@@ -63,7 +63,7 @@ const OurBlogs = () => {
         <h2 className="text-center text-3xl md:text-[40px] mb-4 font-semibold">
           Our Blogs
         </h2>
-        <Slider {...settings} className="!w-[90%] md:w-full grid md:gap-8 py-5">
+        <Slider {...settings} className="w-[90%] md:w-full grid md:gap-8 py-5">
           {blogsData.map(({ id, img, title, description }) => (
             <div
               className=" bg-white md:shadow-xl md:rounded-xl p-5 our-blog-card mx-0 md:mx-5"
