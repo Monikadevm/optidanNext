@@ -68,7 +68,7 @@ const AiSeo = () => {
   ];
 
   return (
-    <div className="container bg-[#3E308A] p-10 md:rounded-3xl  md:mx-auto relative  md:h-[630px] mb-5 md:mb-10 seo-ai">
+    <div className="container bg-[#3E308A] p-10 md:rounded-3xl  md:mx-auto relative  md:h-[630px] my-5 md:my-10 seo-ai">
       <div className="flex flex-col md:flex-row">
         <div>
           <div className="h-12 w-12 md:h-24 md:w-24 rounded-full bg-[#9F4DA6] flex items-center justify-center p-1 md:p-3">
