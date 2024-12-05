@@ -124,7 +124,7 @@ const page = () => {
       <section className="container mx-auto flex flex-col md:flex-row items-center gap-8 p-5 md:py-20">
         <div className="w-full md:w-1/2">
           <img
-            src="/why-choose-us.png"
+            src="/problem-solutions.png"
             alt="optidan"
             className="rounded-lg md:w-[680px]"
           />

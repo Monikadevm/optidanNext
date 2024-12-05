@@ -157,24 +157,24 @@ const page = () => {
                 AI-driven content optimisation at scale
               </h4>
             </div>
-            <div className="grid md:grid-cols-3 gap-6 mt-8">
-              <div className="bg-white rounded-xl border-x-2 border-purple-900 p-3">
+            <div className="grid md:grid-cols-3 gap-4 md:gap-6 mt-8">
+              <div className="bg-white rounded-xl border-x-2 border-purple-900 p-3 shadow-md">
                 <h4 className="text-center">Seamless integration</h4>
               </div>
-              <div className="bg-white rounded-xl border-x-2 border-purple-900 p-3">
+              <div className="bg-white rounded-xl border-x-2 border-purple-900 p-3 shadow-md">
                 <h4 className="text-center">Cost efficiency</h4>
               </div>
-              <div className="bg-white rounded-xl border-x-2 border-purple-900 p-3">
+              <div className="bg-white rounded-xl border-x-2 border-purple-900 p-3 shadow-md">
                 <h4 className="text-center">Data-driven insights</h4>
               </div>
             </div>
             <div className="grid md:grid-cols-2 gap-6 mt-8">
-              <div className="bg-white rounded-xl border-x-2 border-purple-900 p-3">
+              <div className="bg-white rounded-xl border-x-2 border-purple-900 p-3 shadow-md">
                 <h4 className="text-center">
                   Rapid implementation (in as little as 30 days)
                 </h4>
               </div>
-              <div className="bg-white rounded-xl border-x-2 border-purple-900 p-3">
+              <div className="bg-white rounded-xl border-x-2 border-purple-900 p-3 shadow-md">
                 <h4 className="text-center">
                   Brand consistency (Talk to your cusomters)
                 </h4>
