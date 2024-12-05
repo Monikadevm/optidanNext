@@ -1,6 +1,11 @@
 import Link from "next/link";
 import React from "react";
-import { FaPhone } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaPhone,
+  FaPhoneAlt,
+} from "react-icons/fa";
 
 const page = () => {
   return (
@@ -35,7 +40,7 @@ const page = () => {
             <div className="bg-white rounded-xl shadow-lg p-5 mb-4">
               <h4 className="flex items-center font-semibold mb-3">
                 <span className="h-12 w-12 rounded-full flex items-center justify-center bg-[#3E308A] mr-3">
-                  <FaPhone className="text-white" />
+                  <FaPhoneAlt className="text-white" />
                 </span>
                 Call
               </h4>
@@ -44,7 +49,7 @@ const page = () => {
             <div className="bg-white rounded-xl shadow-lg p-5 mb-4">
               <h4 className="flex items-center font-semibold mb-3">
                 <span className="h-12 w-12 rounded-full flex items-center justify-center bg-[#3E308A] mr-3">
-                  <FaPhone className="text-white" />
+                  <FaEnvelope className="text-white" />
                 </span>
                 Email
               </h4>
@@ -59,7 +64,7 @@ const page = () => {
             <div className="bg-white rounded-xl shadow-lg p-5 mb-4">
               <h4 className="flex items-center font-semibold mb-3">
                 <span className="h-12 w-12 rounded-full flex items-center justify-center bg-[#3E308A] mr-3">
-                  <FaPhone className="text-white" />
+                  <FaMapMarkerAlt className="text-white" />
                 </span>
                 Location
               </h4>
