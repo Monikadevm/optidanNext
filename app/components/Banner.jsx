@@ -1,23 +1,47 @@
+"use client";
 import { FaArrowRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Banner = () => {
+  const fadeUpVariant = {
+    initial: { opacity: 0, y: 60 },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+      },
+    },
+  };
+
   return (
     <section className="main-banner-bg text-white py-16 px-4">
       <div className="container  mx-auto flex flex-col md:flex-row items-center justify-between md:space-x-12">
-        <div className="w-full md:w-2/3 md:pr-10">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            We Transform Search & Conversation Performance With Generative AI
-            SEO- AT Scale
-          </h1>
-          <p className="text-lg mb-6">
-            Optidan Al leverages Generative Al to enhance Al-driven con- tent
-            performance for online retailers, streamlining content workflows and
-            optimising product feeds at scale for improved SEO rankings in as
-            little as 30 days.
-          </p>
-        </div>
-
-        <div className="w-full md:w-1/3 bg-white  rounded-2xl shadow-lg text-left ">
+        <motion.div
+          variants={fadeUpVariant}
+          initial="initial"
+          animate="animate"
+          className="w-full md:w-2/3 md:pr-10"
+        >
+          <div className="">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">
+              We Transform Search & Conversation Performance With Generative AI
+              SEO- AT Scale
+            </h1>
+            <p className="text-lg mb-6">
+              Optidan Al leverages Generative Al to enhance Al-driven con- tent
+              performance for online retailers, streamlining content workflows
+              and optimising product feeds at scale for improved SEO rankings in
+              as little as 30 days.
+            </p>
+          </div>
+        </motion.div>
+        <motion.div
+          variants={fadeUpVariant}
+          initial="initial"
+          animate="animate"
+          className="w-full md:w-1/3 bg-white  rounded-2xl shadow-lg text-left "
+        >
           <div className="bg-[#FFF1FF] rounded-t-2xl p-5">
             <h2 className="text-3xl font-semibold  mb-2 text-[#AA50A9]">
               Free Content Audit
@@ -102,7 +126,7 @@ const Banner = () => {
               </div>
             </div>
           </form>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

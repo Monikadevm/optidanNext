@@ -83,7 +83,7 @@ const AiSeo = () => {
           <Slider {...settings} className=" grid gap-8 py-5 ml-auto">
             {seoSolution.map(({ id, img, detail, uName, designation }) => (
               <div
-                className="seo-ai-card bg-white rounded-2xl first:mr-20 h-[480px] "
+                className="seo-ai-card bg-white rounded-2xl first:mr-20 h-[480px] ml-[15px] md:ml-0 "
                 key={id}
               >
                 <img src={img} alt="" />
