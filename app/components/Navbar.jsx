@@ -17,15 +17,11 @@ const Navbar = () => {
 
   const navLinks = [
     { label: "Home", path: "/" },
-    { label: "About Us", path: "/about" },
+    { label: "About Us", path: "/pages/about" },
     {
       label: "Solutions",
-      dropdown: [
-        { label: "dropdown 1", path: "/solutions/drop1" },
-        { label: "dropdown 1", path: "/solutions/drop2" },
-      ],
+      path: "/solutions/",
     },
-    { label: "Pricing", path: "/pricing" },
     {
       label: "Blog",
       path: "/blog",
