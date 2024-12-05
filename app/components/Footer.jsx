@@ -3,7 +3,6 @@ import Link from "next/link";
 import React from "react";
 import {
   FaEnvelope,
-  FaFacebook,
   FaFacebookSquare,
   FaInstagram,
   FaMapMarkerAlt,
@@ -46,19 +45,16 @@ const Footer = () => {
           </h4>
           <ul className="mt-5">
             <li>
-              <a href="#">Home</a>
+              <Link href="/">Home</Link>
             </li>
             <li>
-              <a href="#">About Us</a>
+              <Link href="/pages/about">About Us</Link>
             </li>
             <li>
-              <a href="#">Solutions</a>
+              <Link href="/pages/solutions">Solutions</Link>
             </li>
             <li>
-              <a href="#">Pricing</a>
-            </li>
-            <li>
-              <a href="#">Blog</a>
+              <Link href="/">Blog</Link>
             </li>
           </ul>
         </div>

@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 import { TbPhoneCall } from "react-icons/tb";
 
@@ -39,11 +40,13 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-18">
           <div className="flex-shrink-0 flex items-center">
-            <img
-              src={"/optidan-logo.svg"}
-              alt=""
-              className="w-[80%] md:w-full"
-            />
+            <Link href={"/"}>
+              <img
+                src={"/optidan-logo.svg"}
+                alt=""
+                className="w-[80%] md:w-full"
+              />
+            </Link>
           </div>
           <div className="hidden md:flex items-center space-x-4 ">
             {navLinks.map((link, index) =>
