@@ -64,7 +64,6 @@ const page = () => {
         "With improved SEO through optimised content, your site will attract more visitors organically. Higher visibility on search engines translates into more potential customers discovering your products.",
     },
   ];
-
   const gettingStarted = [
     {
       id: 1,
@@ -97,7 +96,6 @@ const page = () => {
         "After setup, Optidan AI begins monitoring your digital shelf. Our platform provides real-time analytics so you can track improvements in traffic, conversions, and overall content performance.",
     },
   ];
-
   return (
     <>
       <section className="main-banner-bg text-white py-16 px-4">
@@ -255,10 +253,10 @@ const page = () => {
           <h2 className="text-3xl md:text-[40px] md:leading-[50px] mb-6 md:mb-10">
             Getting Started
           </h2>
-          <ul className="px-5 md:px-5">
+          <ul className="">
             {gettingStarted.map(({ id, title, description }) => (
-              <li className="mb-3" key={id}>
-                <h4 className="flex font-semibold text-gray-600">
+              <li className="mb-5" key={id}>
+                <h4 className="flex text-xl font-semibold text-gray-600 mb-2">
                   <FaCheckCircle size={22} className="text-indigo-900 mr-2" />
                   {title}
                 </h4>
@@ -267,7 +265,7 @@ const page = () => {
             ))}
           </ul>
         </div>
-        <div className=" px-5 md:px-0">
+        <div className=" px-5 md:px-0 mt-5 md:mt-0">
           <img src="/solutions-startup.png" alt="" className="ml-auto" />
         </div>
       </div>
