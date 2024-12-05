@@ -15,7 +15,7 @@ const AboutBanner = () => {
   };
 
   return (
-    <section className="main-banner-bg text-white py-16 px-4">
+    <section className="bg-gradient-to-r from-purple-800 via-indigo-900 to-indigo-950 text-white py-16 px-4">
       <div className="container  mx-auto flex flex-col md:flex-row items-center justify-between md:space-x-12">
         <motion.div
           variants={fadeUpVariant}

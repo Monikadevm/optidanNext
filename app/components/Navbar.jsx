@@ -16,15 +16,21 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { label: "Home", path: "/" },
-    { label: "About Us", path: "/pages/about" },
+    {
+      label: "Home",
+      path: "/",
+    },
+    {
+      label: "About Us",
+      path: "/pages/about",
+    },
     {
       label: "Solutions",
-      path: "/solutions/",
+      path: "/pages/solutions/",
     },
     {
       label: "Blog",
-      path: "/blog",
+      path: "/pages/blog",
     },
   ];
 

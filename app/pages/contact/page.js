@@ -5,7 +5,7 @@ import { FaPhone } from "react-icons/fa";
 const page = () => {
   return (
     <>
-      <section className="main-banner-bg text-white py-16 px-4">
+      <section className="text-white py-16 px-4 bg-gradient-to-r from-purple-800 via-indigo-900 to-indigo-950">
         <div className="container  mx-auto flex flex-col md:flex-row items-center justify-between md:space-x-12">
           <div className="w-full md:w-[50%] md:pr-10">
             <div className="md:w-[500px]">

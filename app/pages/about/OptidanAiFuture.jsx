@@ -2,7 +2,7 @@ const OptidanAiFuture = () => {
   return (
     <section className="main-bg2 text-white py-16 px-4">
       <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-between md:space-x-12">
-        <div className="w-full md:w-[50%] md:pr-10">
+        <div className="w-full md:w-[50%] md:pr-10 mb-10 md:mb-0">
           <img src="/get-in-touch.png" alt="get in touch optidan" />
         </div>
         <div className="md:w-[50%] mb-10 md:mb-0 text-gray-800">
