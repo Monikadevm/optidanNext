@@ -7,7 +7,7 @@ const GetInTouch = () => {
       <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-between md:space-x-12">
         <div className="w-full md:w-1/3 bg-white  rounded-2xl shadow-lg text-left mb-10 md:mb-0">
           <div className="bg-indigo-900 rounded-t-2xl p-5">
-            <h2 className="text-3xl font-normal  text-white text-center">
+            <h2 className="text-3xl font-semibold  text-white text-center">
               Get in touch
             </h2>
           </div>
@@ -25,7 +25,7 @@ const GetInTouch = () => {
                   id="fullname"
                   name="fullname"
                   placeholder="Enter your full name"
-                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full p-3 border border-gray-300 rounded-md outline-none"
                   required
                 />
               </div>
@@ -41,7 +41,7 @@ const GetInTouch = () => {
                   id="email"
                   name="email"
                   placeholder="Enter your email address"
-                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full p-3 border border-gray-300 rounded-md outline-none"
                   required
                 />
               </div>
@@ -57,7 +57,7 @@ const GetInTouch = () => {
                   id="website"
                   name="website"
                   placeholder="Enter Website URL"
-                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full p-3 border border-gray-300 rounded-md outline-none"
                   required
                 />
               </div>
@@ -72,7 +72,7 @@ const GetInTouch = () => {
                   id="message"
                   name="message"
                   placeholder="Enter your message"
-                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full p-3 border border-gray-300 rounded-md outline-none"
                   rows="4"
                   required
                 ></textarea>
@@ -80,7 +80,7 @@ const GetInTouch = () => {
               <div className="text-center">
                 <button
                   type="submit"
-                  className="mt-4 py-3 px-6 bg-primary rounded-full text-white font-semibold focus:outline-none flex items-center justify-center  w-full"
+                  className="mt-4 py-3 px-6 bg-primary rounded-full text-white font-semibold outline-none flex items-center justify-center  w-full"
                 >
                   <span className="mr-3">Submit</span> <FaArrowRight />
                 </button>

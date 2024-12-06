@@ -74,7 +74,7 @@ const AiSeo = () => {
           <div className="h-12 w-12 md:h-24 md:w-24 rounded-full bg-[#9F4DA6] flex items-center justify-center p-1 md:p-3">
             <img src="/quote.png" alt="" />
           </div>
-          <h3 className="text-3xl md:text-[40px] text-white md:w-[60%] mt-4 md:mt-20">
+          <h3 className="text-3xl md:text-4xl text-white md:w-[60%] mt-4 md:mt-20 font-semibold">
             Automated AI SEO solutions is here
           </h3>
         </div>

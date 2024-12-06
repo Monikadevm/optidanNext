@@ -52,16 +52,16 @@ const page = () => {
     {
       id: 2,
       img: "/solutions-benefits2.png",
-      title: "Increased Organic Traffic",
+      title: "Enhanced On-Page Conversions",
       detail:
-        "With improved SEO through optimised content, your site will attract more visitors organically. Higher visibility on search engines translates into more potential customers discovering your products.",
+        "Optimised product information leads to a seamless customer experience, which in turn results in higher conversion rates. Clear, compelling content helps guide customers through their purchasing journey.",
     },
     {
       id: 3,
       img: "/solutions-benefits3.png",
-      title: "Increased Organic Traffic",
+      title: "Scalable Solutions",
       detail:
-        "With improved SEO through optimised content, your site will attract more visitors organically. Higher visibility on search engines translates into more potential customers discovering your products.",
+        "Optidan AI efficiently handles large product catalogues, providing a frictionless experience for your team. As your business grows, our platform scales with you, ensuring continued efficiency and effectiveness.",
     },
   ];
   const gettingStarted = [
@@ -102,7 +102,7 @@ const page = () => {
         <div className="container  mx-auto flex flex-col md:flex-row items-center justify-between md:space-x-12">
           <div className="w-full md:w-[50%] md:pr-10">
             <div className="md:w-[500px]">
-              <h1 className="text-4xl md:text-6xl font-bold mb-4">
+              <h1 className="text-4xl md:text-6xl mb-4 font-semibold leading-10">
                 Optimising Your Digital Shelf for Performance
               </h1>
               <p className="text-lg mb-6">
@@ -204,7 +204,7 @@ const page = () => {
       </div>
       <div className="main-bg2 py-10 md:py-20">
         <div className="container mx-auto">
-          <h2 className="text-3xl md:text-[40px] leading-[50px`] mb-5 text-center">
+          <h2 className="text-3xl md:text-4xl font-semibold mb-5 text-center">
             Our Solutions
           </h2>
           <p className="mb-5 text-center text-xl">
@@ -217,7 +217,7 @@ const page = () => {
                 key={id}
               >
                 <div className="">
-                  <h4 className="flex items-center text-xl mb-3">
+                  <h4 className="flex items-center text-xl mb-3 font-semibold">
                     <FaCheckCircle size={22} className="mr-2 text-indigo-900" />
                     {title}
                   </h4>
@@ -232,7 +232,7 @@ const page = () => {
         </div>
       </div>
       <div className="container mx-auto md:py-10 py-20">
-        <h2 className="text-3xl md:text-[40px] md:leading-[50px] mb-6 md:mb-10 text-center">
+        <h2 className="text-3xl md:text-4xl font-semibold mb-6 md:mb-10 text-center">
           Benefits
         </h2>
         <div className="grid md:grid-cols-3 gap-8 px-5 md:px-0">
@@ -241,7 +241,7 @@ const page = () => {
               <img src={img} alt="" className="w-full" />
 
               <div className="p-5">
-                <h4 className="my-4 text-xl">{title}</h4>
+                <h4 className="my-4 text-xl font-semibold">{title}</h4>
                 <p>{detail}</p>
               </div>
             </div>
@@ -250,7 +250,7 @@ const page = () => {
       </div>
       <div className="container mx-auto py-10 md:py-20 grid md:grid-cols-2 px-5 md:px-0">
         <div>
-          <h2 className="text-3xl md:text-[40px] md:leading-[50px] mb-6 md:mb-10">
+          <h2 className="text-3xl md:text-4xl font-semibold mb-6 md:mb-10">
             Getting Started
           </h2>
           <ul className="">
@@ -270,7 +270,7 @@ const page = () => {
         </div>
       </div>
       <div className="container mx-auto text-center pb-8 md:pb-14 px-5 md:px-0">
-        <h2 className="text-3xl md:text-[40px] md:leading-[50px] mb-5 md:mb-6">
+        <h2 className="text-3xl md:text-4xl font-semibold mb-5 md:mb-6">
           Support
         </h2>
         <p className="md:w-[800px] mx-auto">

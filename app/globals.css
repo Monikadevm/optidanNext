@@ -74,7 +74,7 @@ body {
   @apply md:!-bottom-14;
 }
 .seo-ai .slick-prev {
-  @apply md:left-[-637px] md:mt-16;
+  @apply md:left-[-617px] md:mt-16;
 }
 .seo-ai .slick-dots li.slick-active button:before {
   @apply text-[#AA50A9];
@@ -83,10 +83,10 @@ body {
   @apply text-white;
 }
 .seo-ai .slick-next {
-  @apply md:left-[-587px] md:mt-16;
+  @apply md:left-[-570px] md:mt-16;
 }
 .seo-ai .slick-dots {
-  @apply md:-left-[645px] !bottom-8 w-[150px] !hidden md:!flex;
+  @apply md:-left-[624px] !bottom-8 w-[150px] !hidden md:!flex;
 }
 
 .seo-ai-card {

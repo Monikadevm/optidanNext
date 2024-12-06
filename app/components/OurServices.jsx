@@ -31,7 +31,7 @@ const OurServices = () => {
     <div className="optidan-services py-10 md:py-20">
       <div className="container mx-auto px-5 md:px-0">
         <div className="md:w-[40%] mx-auto text-center">
-          <span className="inline-block mb-3 rounded-full border px-4 py-2 text-indigo-800 border-indigo-800">
+          <span className="inline-block mb-3 rounded-full px-4 py-2 text-indigo-800 border-2 border-indigo-800 font-semibold">
             Our Services
           </span>
           <h2 className="font-semibold text-3xl md:text-[40px] my-8 md:my-10 md:w-[95%] mx-auto md:leading-[50px]">

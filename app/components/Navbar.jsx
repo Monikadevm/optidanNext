@@ -27,7 +27,7 @@ const Navbar = () => {
     },
     {
       label: "Solutions",
-      path: "/solutions/",
+      path: "/solutions",
     },
     {
       label: "Blog",
@@ -82,8 +82,14 @@ const Navbar = () => {
                 </a>
               )
             )}
-            <button className="bg-secondary px-6 py-1 text-white rounded-full flex items-center justify-center font-bold h-14 ml-auto">
-              <TbPhoneCall size={24} className="mr-2" /> <span>Contact Us</span>
+            <button className="bg-secondary px-6 py-1 text-white rounded-full  ml-auto">
+              <Link
+                href="/contact"
+                className="flex items-center justify-center font-bold h-14"
+              >
+                <TbPhoneCall size={24} className="mr-2" />
+                <span>Contact Us</span>
+              </Link>
             </button>
           </div>
 

@@ -64,7 +64,7 @@ const Banner = () => {
                   id="fullname"
                   name="fullname"
                   placeholder="Enter your full name"
-                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full p-3 border border-gray-300 rounded-md outline-0 text-gray-800"
                   required
                 />
               </div>
@@ -80,7 +80,7 @@ const Banner = () => {
                   id="email"
                   name="email"
                   placeholder="Enter your email address"
-                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full p-3 border border-gray-300 rounded-md outline-0 text-gray-800"
                   required
                 />
               </div>
@@ -96,7 +96,7 @@ const Banner = () => {
                   id="website"
                   name="website"
                   placeholder="Enter your website url"
-                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full p-3 border border-gray-300 rounded-md outline-0 text-gray-800"
                   required
                 />
               </div>
@@ -111,7 +111,7 @@ const Banner = () => {
                   id="message"
                   name="message"
                   placeholder="Enter your message"
-                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full p-3 border border-gray-300 rounded-md outline-0 text-gray-800"
                   rows="4"
                   required
                 ></textarea>

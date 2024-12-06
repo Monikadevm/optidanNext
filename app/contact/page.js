@@ -9,7 +9,7 @@ const page = () => {
         <div className="container  mx-auto flex flex-col md:flex-row items-center justify-between md:space-x-12">
           <div className="w-full md:w-[50%] md:pr-10">
             <div className="md:w-[500px]">
-              <h1 className="text-4xl md:text-6xl font-bold mb-4">
+              <h1 className="text-3xl md:text-5xl font-bold mb-4">
                 Take the First Step We will do the Rest.
               </h1>
               <p className="text-lg mb-6">
@@ -27,7 +27,7 @@ const page = () => {
         </div>
       </section>
       <section className="container mx-auto py-10 md:py-20">
-        <h2 className=" text-3xl md:text-[40px] md:leading-[50px] text-center mb-5 md:mb-10">
+        <h2 className=" text-3xl md:text-4xl md:leading-[50px] text-center mb-5 md:mb-10 font-semibold">
           We're here to help you
         </h2>
         <div className="flex flex-col md:flex-row md:w-[80%] mx-auto px-5 md:px-0">
@@ -119,7 +119,7 @@ const page = () => {
                 ></textarea>
               </div>
               <div className="mt-4">
-                <buton className="bg-primary py-3 flex rounded-full justify-center text-white">
+                <buton className="bg-primary py-3 flex rounded-full justify-center text-white cursor-pointer opacity-90 hover:opacity-100">
                   Submit
                 </buton>
               </div>
@@ -131,7 +131,7 @@ const page = () => {
         <div className="container mx-auto flex flex-col md:flex-row items-center px-5 md:px-0">
           <div className="md:w-[50%]">
             <div>
-              <h2 className="text-3xl md:text-[40px] md:leading-[50px] mb-3">
+              <h2 className="text-3xl md:text-4xl md:leading-[50px] mb-3 font-semibold">
                 Take The First Step. We will do the Rest.
               </h2>
               <p>

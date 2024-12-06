@@ -6,7 +6,7 @@ const OptidanAiFuture = () => {
           <img src="/get-in-touch.png" alt="get in touch optidan" />
         </div>
         <div className="md:w-[50%] mb-10 md:mb-0 text-gray-800">
-          <h2 className="text-3xl md:text-[40px] md:leading-[50px] mb-5 ">
+          <h2 className="text-3xl md:text-text-4xl  mb-5 font-semibold ">
             The Future with JP and Optidan AI
           </h2>
           <p>

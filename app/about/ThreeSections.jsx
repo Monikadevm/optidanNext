@@ -6,7 +6,7 @@ const ThreeSections = () => {
       <div className="flex flex-col">
         <div className="flex flex-col md:flex-row justify-between items-center mt-10">
           <div className="md:w-[50%] md:pr-20">
-            <h3 className="text-3xl md:text-[40px] md:leading-[50px] mb-3">
+            <h3 className="text-3xl md:text-4xl mb-3 font-semibold">
               A Passion for Disruptive Innovation
             </h3>
             <p>
@@ -34,7 +34,7 @@ const ThreeSections = () => {
             />
           </div>
           <div className="md:w-[50%] md:pr-20">
-            <h3 className="text-3xl md:text-[40px] md:leading-[50px] mb-3">
+            <h3 className="text-3xl md:text-4xl mb-3 font-semibold">
               A Passion for Disruptive Innovation
             </h3>
             <p>
@@ -52,7 +52,7 @@ const ThreeSections = () => {
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center mt-10">
           <div className="md:w-[50%] md:pr-20">
-            <h3 className="text-3xl md:text-[40px] md:leading-[50px] mb-3">
+            <h3 className="text-3xl md:text-4xl mb-3 font-semibold">
               Proven Results, Proven Expertise
             </h3>
             <p>
