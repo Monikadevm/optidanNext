@@ -23,15 +23,15 @@ const Navbar = () => {
     },
     {
       label: "About Us",
-      path: "/pages/about",
+      path: "/about",
     },
     {
       label: "Solutions",
-      path: "/pages/solutions/",
+      path: "/solutions/",
     },
     {
       label: "Blog",
-      path: "/pages/blog",
+      path: "/blog",
     },
   ];
 
