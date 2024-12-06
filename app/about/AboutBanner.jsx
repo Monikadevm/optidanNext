@@ -1,5 +1,4 @@
 "use client";
-import { FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const AboutBanner = () => {

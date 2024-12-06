@@ -1,11 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import {
-  FaEnvelope,
-  FaMapMarkerAlt,
-  FaPhone,
-  FaPhoneAlt,
-} from "react-icons/fa";
+import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 
 const page = () => {
   return (
