@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const OurBlogs = () => {
   var settings = {
@@ -59,7 +60,12 @@ const OurBlogs = () => {
 
   return (
     <div className="main-bg2 py-10 md:py-20">
-      <div className="container mx-auto ">
+      <motion.div
+        initial={{ opacity: 0, translateY: 50 }}
+        whileInView={{ opacity: 1, translateY: 0 }}
+        transition={{ duration: 2 }}
+        className="container mx-auto "
+      >
         <h2 className="text-center text-3xl md:text-[40px] mb-4 font-semibold">
           Our Blogs
         </h2>
@@ -78,7 +84,7 @@ const OurBlogs = () => {
             </div>
           ))}
         </Slider>
-      </div>
+      </motion.div>
     </div>
   );
 };

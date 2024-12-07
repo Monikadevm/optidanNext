@@ -1,11 +1,20 @@
+"use client";
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const GetInTouch = () => {
   return (
     <section className="main-bg2 text-white py-16 px-4">
       <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-between md:space-x-12">
-        <div className="w-full md:w-1/3 bg-white  rounded-2xl shadow-lg text-left mb-10 md:mb-0">
+        <motion.div
+          initial={{ opacity: 0, translateX: -40 }}
+          whileInView={{ opacity: 1, translateX: 0 }}
+          transition={{
+            duration: 1.5,
+          }}
+          className="w-full md:w-1/3 bg-white  rounded-2xl shadow-lg text-left mb-10 md:mb-0"
+        >
           <div className="bg-indigo-900 rounded-t-2xl p-5">
             <h2 className="text-3xl font-semibold  text-white text-center">
               Get in touch
@@ -87,10 +96,17 @@ const GetInTouch = () => {
               </div>
             </div>
           </form>
-        </div>
-        <div className="w-full md:w-[50%] md:pr-10">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, translateX: 40 }}
+          whileInView={{ opacity: 1, translateX: 0 }}
+          transition={{
+            duration: 1.5,
+          }}
+          className="w-full md:w-[50%] md:pr-10"
+        >
           <img src="/get-in-touch.png" alt="get in touch optidan" />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -6,17 +6,6 @@ import { FaStar } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const AiSeo = () => {
-  const fadeUpVariant = {
-    initial: { opacity: 0, y: 60 },
-    animate: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-      },
-    },
-  };
-
   var settings = {
     dots: true,
     infinite: true,
@@ -80,7 +69,12 @@ const AiSeo = () => {
   ];
 
   return (
-    <div className="container bg-[#3E308A] p-10 md:rounded-3xl  md:mx-auto relative  md:h-[630px] my-5 md:my-10 seo-ai">
+    <motion.div
+      initial={{ opacity: 0, translateY: 50 }}
+      whileInView={{ opacity: 1, translateY: 0 }}
+      transition={{ duration: 2 }}
+      className="container bg-[#3E308A] p-10 md:rounded-3xl  md:mx-auto relative  md:h-[630px] my-5 md:my-10 seo-ai"
+    >
       <div className="flex flex-col md:flex-row">
         <div>
           <div className="h-12 w-12 md:h-24 md:w-24 rounded-full bg-[#9F4DA6] flex items-center justify-center p-1 md:p-3">
@@ -90,12 +84,7 @@ const AiSeo = () => {
             Automated AI SEO solutions is here
           </h3>
         </div>
-        <motion.div
-          variants={fadeUpVariant}
-          initial="initial"
-          animate="animate"
-          className="w-full md:w-[55%] -mr-32"
-        >
+        <div className="w-full md:w-[55%] -mr-32">
           <Slider {...settings} className=" grid gap-8 py-5 ml-auto">
             {seoSolution.map(({ id, img, detail, uName, designation }) => (
               <div
@@ -119,9 +108,9 @@ const AiSeo = () => {
               </div>
             ))}
           </Slider>
-        </motion.div>
+        </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
