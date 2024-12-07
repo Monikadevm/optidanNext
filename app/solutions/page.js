@@ -1,6 +1,7 @@
+"use client";
 import React from "react";
-
 import { FaCheckCircle, FaRegCheckCircle } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const page = () => {
   const ourSolutions = [
@@ -101,7 +102,12 @@ const page = () => {
       <section className=" text-white py-16 px-4 bg-gradient-to-r from-purple-800 via-indigo-900 to-indigo-950">
         <div className="container  mx-auto flex flex-col md:flex-row items-center justify-between md:space-x-12">
           <div className="w-full md:w-[50%] md:pr-10">
-            <div className="md:w-[500px]">
+            <motion.div
+              initial={{ opacity: 0, translateX: -40 }}
+              whileInView={{ opacity: 1, translateX: 0 }}
+              transition={{ duration: 2 }}
+              className="md:w-[500px]"
+            >
               <h1 className="text-4xl md:text-6xl mb-4 font-semibold leading-10">
                 Optimising Your Digital Shelf for Performance
               </h1>
@@ -114,23 +120,38 @@ const page = () => {
                 out is crucial, and Optidan AI ensures your business does just
                 that.
               </p>
-            </div>
+            </motion.div>
           </div>
-          <div className="w-full md:w-[50%] ">
+          <motion.div
+            initial={{ opacity: 0, translateX: 40 }}
+            whileInView={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 2 }}
+            className="w-full md:w-[50%] "
+          >
             <img src="/solutions-banner.png" alt="" />
-          </div>
+          </motion.div>
         </div>
       </section>
       <section className="container mx-auto flex flex-col md:flex-row items-center gap-8 p-5 md:py-20">
-        <div className="w-full md:w-1/2">
+        <motion.div
+          initial={{ opacity: 0, translateX: -40 }}
+          whileInView={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 2 }}
+          className="w-full md:w-1/2"
+        >
           <img
             src="/problem-solutions.png"
             alt="optidan"
             className="rounded-lg md:w-[680px]"
           />
-        </div>
+        </motion.div>
 
-        <div className="w-full md:w-1/2 md:text-left text-black">
+        <motion.div
+          initial={{ opacity: 0, translateX: 40 }}
+          whileInView={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 2 }}
+          className="w-full md:w-1/2 md:text-left text-black"
+        >
           <h2 className="text-3xl font-semibold md:text-[40px] mb-4 m:width-[90%] md:leading-[50px]">
             The Problem
           </h2>
@@ -187,9 +208,14 @@ const page = () => {
               </div>
             </li>
           </ul>
-        </div>
+        </motion.div>
       </section>
-      <div className="container mx-auto py-10  md:py-20 text-center px-5 md:px-0">
+      <motion.div
+        initial={{ opacity: 0, translateY: 40 }}
+        whileInView={{ opacity: 1, translateX: 0 }}
+        transition={{ duration: 2 }}
+        className="container mx-auto py-10  md:py-20 text-center px-5 md:px-0"
+      >
         <h2 className="text-2xl md:text-[40px] mb-5 font-semibold">
           The Current Challenge
         </h2>
@@ -201,8 +227,13 @@ const page = () => {
           and sales.
         </p>
         <img src="/did-you-know.png" alt="" className="mx-auto mt-10" />
-      </div>
-      <div className="main-bg2 py-10 md:py-20">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, translateY: 40 }}
+        whileInView={{ opacity: 1, translateY: 0 }}
+        transition={{ duration: 2 }}
+        className="main-bg2 py-10 md:py-20"
+      >
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-4xl font-semibold mb-5 text-center">
             Our Solutions
@@ -230,8 +261,13 @@ const page = () => {
             ))}
           </ul>
         </div>
-      </div>
-      <div className="container mx-auto md:py-10 py-20">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, translateY: 50 }}
+        whileInView={{ opacity: 1, translateY: 0 }}
+        transition={{ duration: 2 }}
+        className="container mx-auto md:py-10 py-20"
+      >
         <h2 className="text-3xl md:text-4xl font-semibold mb-6 md:mb-10 text-center">
           Benefits
         </h2>
@@ -247,9 +283,13 @@ const page = () => {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
       <div className="container mx-auto py-10 md:py-20 grid md:grid-cols-2 px-5 md:px-0">
-        <div>
+        <motion.div
+          initial={{ opacity: 0, translateX: -40 }}
+          whileInView={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 1 }}
+        >
           <h2 className="text-3xl md:text-4xl font-semibold mb-6 md:mb-10">
             Getting Started
           </h2>
@@ -264,12 +304,22 @@ const page = () => {
               </li>
             ))}
           </ul>
-        </div>
-        <div className=" px-5 md:px-0 mt-5 md:mt-0">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, translateX: 40 }}
+          whileInView={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 1 }}
+          className=" px-5 md:px-0 mt-5 md:mt-0"
+        >
           <img src="/solutions-startup.png" alt="" className="ml-auto" />
-        </div>
+        </motion.div>
       </div>
-      <div className="container mx-auto text-center pb-8 md:pb-14 px-5 md:px-0">
+      <motion.div
+        initial={{ opacity: 0, translateY: 40 }}
+        whileInView={{ opacity: 1, translateY: 0 }}
+        transition={{ duration: 1 }}
+        className="container mx-auto text-center pb-8 md:pb-14 px-5 md:px-0"
+      >
         <h2 className="text-3xl md:text-4xl font-semibold mb-5 md:mb-6">
           Support
         </h2>
@@ -279,7 +329,7 @@ const page = () => {
           business needs. Whether you need strategic guidance or technical
           assistance, our expert team is here to help ensure your success.
         </p>
-      </div>
+      </motion.div>
     </>
   );
 };
