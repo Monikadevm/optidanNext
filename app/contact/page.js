@@ -1,13 +1,21 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const page = () => {
   return (
     <>
       <section className="text-white py-16 px-4 bg-gradient-to-r from-purple-800 via-indigo-900 to-indigo-950">
         <div className="container  mx-auto flex flex-col md:flex-row items-center justify-between md:space-x-12">
-          <div className="w-full md:w-[50%] md:pr-10">
+          <motion.div
+            initial={{ opacity: 0, translateX: -40 }}
+            whileInView={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 1 }}
+            className="w-full md:w-[50%] md:pr-10"
+          >
             <div className="md:w-[500px]">
               <h1 className="text-3xl md:text-5xl font-bold mb-4">
                 Take the First Step We will do the Rest.
@@ -20,18 +28,33 @@ const page = () => {
                 presence.
               </p>
             </div>
-          </div>
-          <div className="w-full md:w-[50%] ">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, translateX: 40 }}
+            whileInView={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 1 }}
+            className="w-full md:w-[50%] "
+          >
             <img src="/contact-banner-optidan.png" alt="" />
-          </div>
+          </motion.div>
         </div>
       </section>
       <section className="container mx-auto py-10 md:py-20">
-        <h2 className=" text-3xl md:text-4xl md:leading-[50px] text-center mb-5 md:mb-10 font-semibold">
+        <motion.h2
+          initial={{ opacity: 0, translateY: -40 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 1 }}
+          className=" text-3xl md:text-4xl md:leading-[50px] text-center mb-5 md:mb-10 font-semibold"
+        >
           We're here to help you
-        </h2>
+        </motion.h2>
         <div className="flex flex-col md:flex-row md:w-[80%] mx-auto px-5 md:px-0">
-          <div className="md:w-[35%]">
+          <motion.div
+            initial={{ opacity: 0, translateX: -40 }}
+            whileInView={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 1 }}
+            className="md:w-[35%]"
+          >
             <div className="bg-white rounded-xl shadow-lg p-5 mb-4">
               <h4 className="flex items-center font-semibold mb-3">
                 <span className="h-12 w-12 rounded-full flex items-center justify-center bg-[#3E308A] mr-3">
@@ -65,8 +88,13 @@ const page = () => {
               </h4>
               <p>Level 1, 11 York St,Sydney 2000</p>
             </div>
-          </div>
-          <div className="w-full md:pl-10 mt-10 md:mt-0">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, translateX: 40 }}
+            whileInView={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 1 }}
+            className="w-full md:pl-10 mt-10 md:mt-0"
+          >
             <div className="bg-[#FFF1FF] py-2 rounded-t-lg">
               <h3 className="text-center text-3xl text-primary font-semibold">
                 Drop us a line
@@ -124,12 +152,17 @@ const page = () => {
                 </buton>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
       <section className="main-bg2 md:py-20">
         <div className="container mx-auto flex flex-col md:flex-row items-center px-5 md:px-0">
-          <div className="md:w-[50%]">
+          <motion.div
+            initial={{ opacity: 0, translateX: -40 }}
+            whileInView={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 1 }}
+            className="md:w-[50%]"
+          >
             <div>
               <h2 className="text-3xl md:text-4xl md:leading-[50px] mb-3 font-semibold">
                 Take The First Step. We will do the Rest.
@@ -185,10 +218,15 @@ const page = () => {
               performance and the opportunities that can help transform your
               business performance.
             </div>
-          </div>
-          <div className="md:[w-50%] md:pl-10 mb-10 md:mb-0">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, translateX: 40 }}
+            whileInView={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 1 }}
+            className="md:[w-50%] md:pl-10 mb-10 md:mb-0"
+          >
             <img src="/contact-page-seo.png" alt="" />
-          </div>
+          </motion.div>
         </div>
       </section>
     </>

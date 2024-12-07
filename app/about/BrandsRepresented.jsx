@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const BrandsRepresented = () => {
   var settings = {
@@ -61,7 +62,12 @@ const BrandsRepresented = () => {
 
   return (
     <div className="py-10 md:py-20">
-      <div className="container mx-auto ">
+      <motion.div
+        initial={{ opacity: 0, translateY: 60 }}
+        whileInView={{ translateY: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="container mx-auto "
+      >
         <h2 className="text-center text-3xl md:text-[40px] mb-4 md:mb-5 font-semibold md:w-[60%] mx-auto md:leading-[50px] ">
           Some of the brands JP has represented over two decades
         </h2>
@@ -82,7 +88,7 @@ const BrandsRepresented = () => {
             </div>
           ))}
         </Slider>
-      </div>
+      </motion.div>
     </div>
   );
 };

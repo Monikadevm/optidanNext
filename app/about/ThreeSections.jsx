@@ -1,11 +1,18 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 
 const ThreeSections = () => {
   return (
     <div className="container mx-auto px-5 md:px-0">
       <div className="flex flex-col">
         <div className="flex flex-col md:flex-row justify-between items-center mt-10">
-          <div className="md:w-[50%] md:pr-20">
+          <motion.div
+            initial={{ opacity: 0, translateX: -40 }}
+            whileInView={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 2 }}
+            className="md:w-[50%] md:pr-20"
+          >
             <h3 className="text-3xl md:text-4xl mb-3 font-semibold">
               A Passion for Disruptive Innovation
             </h3>
@@ -18,22 +25,37 @@ const ThreeSections = () => {
               commitment to leveraging AI and machine learning to revolutionize
               how online retailers optimize their digital shelf presence.
             </p>
-          </div>
-          <div className="mt-10 md:mt-0">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, translateX: 40 }}
+            whileInView={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 2 }}
+            className="mt-10 md:mt-0"
+          >
             <img
               src="/traffic-growth.png"
               alt="A Passion for Disruptive Innovation"
             />
-          </div>
+          </motion.div>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center mt-10">
-          <div className="mt-10 md:mt-0">
+          <motion.div
+            initial={{ opacity: 0, translateX: -40 }}
+            whileInView={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 2 }}
+            className="mt-10 md:mt-0"
+          >
             <img
               src="/traffic-growth.png"
               alt="A Passion for Disruptive Innovation"
             />
-          </div>
-          <div className="md:w-[50%] md:pr-20">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, translateX: 40 }}
+            whileInView={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 2 }}
+            className="md:w-[50%] md:pr-20"
+          >
             <h3 className="text-3xl md:text-4xl mb-3 font-semibold">
               A Passion for Disruptive Innovation
             </h3>
@@ -48,10 +70,15 @@ const ThreeSections = () => {
               every strategy is as individual as the businesses we serve. It's
               what sets us apart, and can't be copied.
             </p>
-          </div>
+          </motion.div>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center mt-10">
-          <div className="md:w-[50%] md:pr-20">
+          <motion.div
+            initial={{ opacity: 0, translateX: -40 }}
+            whileInView={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 2 }}
+            className="md:w-[50%] md:pr-20"
+          >
             <h3 className="text-3xl md:text-4xl mb-3 font-semibold">
               Proven Results, Proven Expertise
             </h3>
@@ -65,13 +92,18 @@ const ThreeSections = () => {
               experience is at the core of Optidan AI's foundation - a testament
               to the effectiveness of our approach and strategies.
             </p>
-          </div>
-          <div className="mt-10 md:mt-0">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, translateX: 40 }}
+            whileInView={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 2 }}
+            className="mt-10 md:mt-0"
+          >
             <img
               src="/traffic-growth.png"
               alt="A Passion for Disruptive Innovation"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

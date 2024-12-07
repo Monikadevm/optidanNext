@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 // import BlogBanner from "./components/BlogBanner";
 import Link from "next/link";
@@ -7,6 +8,7 @@ import { FaRegClock, FaRegUser } from "react-icons/fa";
 // import Search from "./components/Search";
 // import CategoryFilter from "./components/CategoryFilter";
 // import ItemList from "./components/ItemList";
+import { motion } from "framer-motion";
 
 const page = () => {
   return (
@@ -18,7 +20,12 @@ const page = () => {
 
       <div className="container mx-auto py-20">
         <div className="flex justify-between flex-col md:flex-row px-5 md:px-0">
-          <div className="md:w-[65%] mb-8 md:mb-0">
+          <motion.div
+            initial={{ opacity: 0, translateX: -40 }}
+            whileInView={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 1 }}
+            className="md:w-[65%] mb-8 md:mb-0"
+          >
             <div>
               <img src="/blog-banner.png" alt="" />
               <div className="mt-6 mb-4">
@@ -43,8 +50,13 @@ const page = () => {
                 drives potential customers to your business.
               </p>
             </div>
-          </div>
-          <div className="md:w-[35%] flex flex-col ">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, translateX: 40 }}
+            whileInView={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 1 }}
+            className="md:w-[35%] flex flex-col "
+          >
             <div className="flex mb-5">
               <input
                 type="text"
@@ -146,9 +158,14 @@ const page = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
-        <div className="grid md:grid-cols-3 gap-4 md:gap-8 px-5 md:px-0">
+        <motion.div
+          initial={{ opacity: 0, translateY: 40 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 1 }}
+          className="grid md:grid-cols-3 gap-4 md:gap-8 px-5 md:px-0 mt-8"
+        >
           <div className="md:max-w-[400px] mb-4 md:mb-0 ">
             <div className="mb-4">
               <img src="/main-blog1.png" alt="" className="w-full" />
@@ -214,8 +231,13 @@ const page = () => {
               </p>
             </div>
           </div>
-        </div>
-        <div className="mt-8">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, translateY: 60 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 1 }}
+          className="mt-8"
+        >
           <ul className="flex mx-auto justify-center">
             <li className="m-1">
               <Link
@@ -274,7 +296,7 @@ const page = () => {
               </Link>
             </li>
           </ul>
-        </div>
+        </motion.div>
       </div>
     </>
   );

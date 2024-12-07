@@ -1,8 +1,13 @@
-import React from "react";
-
+"use client";
+import { motion } from "framer-motion";
 const InnovativeLeader = () => {
   return (
-    <div className="container mx-auto py-10  md:py-20 text-center px-5 md:px-0">
+    <motion.div
+      initial={{ opacity: 0, translateY: 40 }}
+      whileInView={{ opacity: 1, translateY: 0 }}
+      transition={{ duration: 1 }}
+      className="container mx-auto py-10  md:py-20 text-center px-5 md:px-0"
+    >
       <h2 className="text-2xl md:text-[40px] mb-5 font-semibold">
         From Industry Expert to Innovative Leader{" "}
       </h2>
@@ -13,7 +18,7 @@ const InnovativeLeader = () => {
         Generative AI.
       </p>
       <img src="/did-you-know.png" alt="" className="mx-auto mt-10" />
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,7 +1,14 @@
+"use client";
+import { motion } from "framer-motion";
 const OptidanAiFuture = () => {
   return (
     <section className="main-bg2 text-white py-16 px-4">
-      <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-between md:space-x-12">
+      <motion.div
+        initial={{ opacity: 0, translateY: 60 }}
+        whileInView={{ translateY: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-between md:space-x-12"
+      >
         <div className="w-full md:w-[50%] md:pr-10 mb-10 md:mb-0">
           <img src="/get-in-touch.png" alt="get in touch optidan" />
         </div>
@@ -20,7 +27,7 @@ const OptidanAiFuture = () => {
             excellence and driving unparalleled results for our retail partners.
           </p>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

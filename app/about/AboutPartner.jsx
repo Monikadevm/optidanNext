@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 const AboutPartners = () => {
   const partners = [
@@ -12,7 +14,12 @@ const AboutPartners = () => {
   return (
     <div className="py-5 md:py-10">
       <div className="container mx-auto">
-        <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-8 items-center px-5">
+        <motion.div
+          initial={{ opacity: 0, translateY: 40 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 1 }}
+          className="flex flex-col md:flex-row justify-center gap-4 md:gap-8 items-center px-5"
+        >
           {partners.map((data) => (
             <div
               key={data.id}
@@ -26,7 +33,7 @@ const AboutPartners = () => {
               />
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );

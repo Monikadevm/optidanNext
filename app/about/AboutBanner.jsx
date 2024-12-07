@@ -2,24 +2,13 @@
 import { motion } from "framer-motion";
 
 const AboutBanner = () => {
-  const fadeUpVariant = {
-    initial: { opacity: 0, y: 60 },
-    animate: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-      },
-    },
-  };
-
   return (
     <section className="bg-gradient-to-r from-purple-800 via-indigo-900 to-indigo-950 text-white py-16 px-4">
       <div className="container  mx-auto flex flex-col md:flex-row items-center justify-between md:space-x-12">
         <motion.div
-          variants={fadeUpVariant}
-          initial="initial"
-          animate="animate"
+          initial={{ opacity: 0, translateX: -30 }}
+          whileInView={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 1 }}
           className="w-full md:w-2/3 md:pr-10"
         >
           <div className="">
@@ -37,9 +26,9 @@ const AboutBanner = () => {
           </div>
         </motion.div>
         <motion.div
-          variants={fadeUpVariant}
-          initial="initial"
-          animate="animate"
+          initial={{ opacity: 0, translateX: 40 }}
+          whileInView={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 2 }}
           className="w-full md:w-1/3 "
         >
           <img src="/about-banner-optidan.png" alt="" />
