@@ -212,7 +212,7 @@ const page = () => {
       </section>
       <motion.div
         initial={{ opacity: 0, translateY: 40 }}
-        whileInView={{ opacity: 1, translateX: 0 }}
+        whileInView={{ opacity: 1, translateY: 0 }}
         transition={{ duration: 2 }}
         className="container mx-auto py-10  md:py-20 text-center px-5 md:px-0"
       >
