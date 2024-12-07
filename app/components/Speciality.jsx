@@ -1,9 +1,14 @@
-import React from "react";
-
+"use client";
+import { motion } from "framer-motion";
 const Speciality = () => {
   return (
     <div className="bg-white py-10 md:py-32 speciality-bg">
-      <div className="container mx-auto px-5 md:px-0 text-lg">
+      <motion.div
+        initial={{ opacity: 0, translateY: 40 }}
+        whileInView={{ opacity: 1, translateY: 0 }}
+        transition={{ duration: 1 }}
+        className="container mx-auto px-5 md:px-0 text-lg"
+      >
         <div className="grid md:grid-cols-3 gap-8 ">
           <div className="md:px-10 md:py-8 rounded-3xl  bg-white shadow-xl shadow-gray-100 border-x-4 border-purple-700 p-4 flex items-center">
             <div className="h-16 w-20 bg-white shadow-lg mr-5 flex items-center justify-center rounded-lg">
@@ -38,7 +43,7 @@ const Speciality = () => {
             <h4>Shopify Integration</h4>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const HowItWorks = () => {
   const howItWorks = [
@@ -26,10 +28,24 @@ const HowItWorks = () => {
   return (
     <div className="main-bg2 py-10 md:py-20 ">
       <div className="container mx-auto grid md:grid-cols-2 px-5 md:px-0">
-        <div>
+        <motion.div
+          initial={{
+            opacity: 0,
+            translateX: -50,
+          }}
+          whileInView={{ opacity: 1, translateX: 0 }}
+          transition={{
+            duration: 1,
+          }}
+        >
           <img src="/traffic-growth.png" alt="" />
-        </div>
-        <div className="md:pl-[80px]">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, translateX: 50 }}
+          whileInView={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 2 }}
+          className="md:pl-[80px]"
+        >
           <h2 className="text-3xl md:text-[40px] mb-3 font-semibold">
             How it work !
           </h2>
@@ -53,7 +69,7 @@ const HowItWorks = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -1,17 +1,39 @@
+"use client";
 import { FaArrowRight, FaRegCheckCircle } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const WhyChooseUs = () => {
   return (
     <section className="container mx-auto flex flex-col md:flex-row items-center gap-8 p-5 md:py-20">
-      <div className="w-full md:w-1/2">
+      <motion.div
+        initial={{ opacity: 0, translateX: -20 }}
+        whileInView={{ opacity: 1, translateX: 0 }}
+        transition={{
+          duration: 1,
+        }}
+        className="w-full md:w-1/2"
+      >
         <img
           src="/why-choose-us.png"
           alt="optidan"
           className="rounded-lg md:w-[680px]"
         />
-      </div>
+      </motion.div>
 
-      <div className="w-full md:w-1/2 md:text-left text-black">
+      <motion.div
+        initial={{
+          opacity: 0,
+          translateX: 20,
+        }}
+        whileInView={{
+          opacity: 1,
+          translateX: 0,
+        }}
+        transition={{
+          duration: 2,
+        }}
+        className="w-full md:w-1/2 md:text-left text-black"
+      >
         <span className="text-lg text-primary flex mb-3">Why Choose Us ?</span>
         <h2 className="text-3xl font-semibold md:text-[40px] mb-4 m:width-[90%] md:leading-[50px]">
           AI-Powered SEO Solution Champions for eCommerce Growth
@@ -39,7 +61,7 @@ const WhyChooseUs = () => {
         <button className="px-10 rounded-full py-4 border-primary text-primary flex items-center primary-outline-btn w-full md:w-auto justify-center mt-8 md:mt-0">
           <span className="mr-2 font-bold">Read More</span> <FaArrowRight />
         </button>
-      </div>
+      </motion.div>
     </section>
   );
 };

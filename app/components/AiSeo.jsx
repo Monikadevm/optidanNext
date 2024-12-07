@@ -3,8 +3,20 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaStar } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const AiSeo = () => {
+  const fadeUpVariant = {
+    initial: { opacity: 0, y: 60 },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+      },
+    },
+  };
+
   var settings = {
     dots: true,
     infinite: true,
@@ -78,8 +90,12 @@ const AiSeo = () => {
             Automated AI SEO solutions is here
           </h3>
         </div>
-
-        <div className="w-full md:w-[55%] -mr-32">
+        <motion.div
+          variants={fadeUpVariant}
+          initial="initial"
+          animate="animate"
+          className="w-full md:w-[55%] -mr-32"
+        >
           <Slider {...settings} className=" grid gap-8 py-5 ml-auto">
             {seoSolution.map(({ id, img, detail, uName, designation }) => (
               <div
@@ -103,7 +119,7 @@ const AiSeo = () => {
               </div>
             ))}
           </Slider>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

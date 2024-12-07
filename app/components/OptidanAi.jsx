@@ -1,14 +1,26 @@
+"use client";
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const OptidanAi = () => {
   return (
     <div className="optidan-services py-10 md:py-20">
       <div className="container mx-auto grid md:grid-cols-2">
-        <div className="px-5">
+        <motion.div
+          initial={{ opacity: 0, translateX: -40 }}
+          whileInView={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 1 }}
+          className="px-5"
+        >
           <img src="/optidan-ai.png" alt="" />
-        </div>
-        <div className="md:w-[100%] px-5 md:px-0 md:pl-8">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, translateX: 40 }}
+          whileInView={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 1 }}
+          className="md:w-[100%] px-5 md:px-0 md:pl-8"
+        >
           <h2 className="mt-14 font-semibold md:mt-0 text-2xl md:text-[40px] mb-4 md:leading-[50px]">
             Optidan AI are Transforming Your Digital Strategy with Generative
             AI-Powered Solutions
@@ -39,7 +51,7 @@ const OptidanAi = () => {
           <button className="primary-outline-btn rounded-full py-4 px-8 font-semibold flex items-center justify-center  text-primary mt-4 md:mt-7 w-full md:w-auto">
             <span className="mr-4">Learn more</span> <FaArrowRight />
           </button>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

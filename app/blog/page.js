@@ -1,13 +1,21 @@
 import React from "react";
-import BlogBanner from "./components/BlogBanner";
+// import BlogBanner from "./components/BlogBanner";
 import Link from "next/link";
 import Image from "next/image";
 import { FaRegClock, FaRegUser } from "react-icons/fa";
+// import { AppProvider } from "./context/AppContext";
+// import Search from "./components/Search";
+// import CategoryFilter from "./components/CategoryFilter";
+// import ItemList from "./components/ItemList";
 
 const page = () => {
   return (
     <>
-      <BlogBanner />
+      {/* <Search />
+      <CategoryFilter />
+      <ItemList /> 
+      <BlogBanner />*/}
+
       <div className="container mx-auto py-20">
         <div className="flex justify-between flex-col md:flex-row px-5 md:px-0">
           <div className="md:w-[65%] mb-8 md:mb-0">

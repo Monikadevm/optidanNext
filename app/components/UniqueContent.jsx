@@ -1,10 +1,19 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 
 const UniqueContent = () => {
   return (
     <div className="py-10 md:py-20">
       <div className="container mx-auto flex flex-col md:flex-row px-5 md:px-0">
-        <div className="w-full md:w-[50%]">
+        <motion.div
+          initial={{ opacity: 0, translateX: -40 }}
+          whileInView={{ opacity: 1, translateX: 0 }}
+          transition={{
+            duration: 1,
+          }}
+          className="w-full md:w-[50%]"
+        >
           <div className="pr-10">
             <h2 className="text-3xl md:text-[40px] md:leading-[50px] mb-6 font-semibold">
               Find out How unique your content is
@@ -18,10 +27,20 @@ const UniqueContent = () => {
               and results.
             </p>
           </div>
-        </div>
-        <div className="w-full md:w-[50%]">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, translateX: 40 }}
+          whileInView={{
+            opacity: 1,
+            translateX: 0,
+          }}
+          transition={{
+            duration: 1,
+          }}
+          className="w-full md:w-[50%]"
+        >
           <img src="/unique-content-right.png" alt="" />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

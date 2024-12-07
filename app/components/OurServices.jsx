@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const OurServices = () => {
   const ourServicesData = [
@@ -30,15 +32,35 @@ const OurServices = () => {
   return (
     <div className="optidan-services py-10 md:py-20">
       <div className="container mx-auto px-5 md:px-0">
-        <div className="md:w-[40%] mx-auto text-center">
+        <motion.div
+          initial={{ opacity: 0, translateY: 40 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{
+            duration: 0.5,
+          }}
+          className="md:w-[40%] mx-auto text-center"
+        >
           <span className="inline-block mb-3 rounded-full px-4 py-2 text-indigo-800 border-2 border-indigo-800 font-semibold">
             Our Services
           </span>
           <h2 className="font-semibold text-3xl md:text-[40px] my-8 md:my-10 md:w-[95%] mx-auto md:leading-[50px]">
             AI SEO Software Tools for Complete Optimisation
           </h2>
-        </div>
-        <div className="grid  md:grid-cols-3 md:gap-8">
+        </motion.div>
+        <motion.div
+          className="grid  md:grid-cols-3 md:gap-8"
+          initial={{
+            opacity: 0,
+            translateY: 20,
+          }}
+          whileInView={{
+            opacity: 1,
+            translateY: 0,
+          }}
+          transition={{
+            duration: 1,
+          }}
+        >
           {ourServicesData.map(({ id, img, title, description }) => (
             <div
               className="bg-white p-6 rounded-2xl hover:shadow-lg duration-300 mb-3 border border-dashed border-gray-400 md:border-0 "
@@ -57,12 +79,19 @@ const OurServices = () => {
               <p>{description}</p>
             </div>
           ))}
-        </div>
-        <div className="text-center mt-9">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, translateY: 20 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{
+            duration: 1,
+          }}
+          className="text-center mt-9"
+        >
           <button className="primary-outline-btn rounded-full py-4 px-8 font-semibold flex items-center mx-auto text-primary w-full md:w-auto justify-center">
             <span className="mr-4">View our Service</span> <FaArrowRight />
           </button>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
