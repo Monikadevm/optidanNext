@@ -46,7 +46,7 @@ const Partners = () => {
           {partners.map((data) => (
             <div
               key={data.id}
-              className="bg-white px-8 py-2 rounded-full shadow-2xl shadow-gray-100 w-full md:w-auto "
+              className="bg-white px-8 py-2 rounded-full shadow-2xl shadow-gray-100 w-full md:w-auto"
             >
               <Image
                 src={data.img}

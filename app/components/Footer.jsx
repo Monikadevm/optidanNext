@@ -18,12 +18,11 @@ const Footer = () => {
         <div>
           <Image src={"/logo.svg"} width={294} height={98} alt="optidan" />
           <p className="my-5 md:pr-20">
-            Experience unmatched AI SEO optimisation with Optidan’s seamless
+            Experience unmatched AI SEO optimisation with Optidan's seamless
             technology. Our AI services optimise your Shopify store and
             e-commerce site day and night, delivering rapid results 20x faster,
             95% time savings, and a 14%+ boost in conversions at a lower cost.
           </p>
-
           <ul className="flex mb-5">
             <li className="mr-4">
               <FaFacebookSquare className=" text-3xl cursor-pointer hover:text-fuchsia-800" />
@@ -62,13 +61,13 @@ const Footer = () => {
           <h4 className="text-3xl border-b border-white footer-heading-border relative py-4 md:w-[90%]">
             Keep In Touch
           </h4>
-          <Link href={""} className="flex items-center mt-5 mb-3">
+          <p className="flex items-center mt-5 mb-3">
             <FaMapMarkerAlt className="mr-2 text-xl" /> Level 1/11 York St,
             Sydney 2000
-          </Link>
-          <Link href={""} className="flex items-center mb-3">
+          </p>
+          <p className="flex items-center mb-3">
             <FaPhoneAlt className="mr-2 text-xl" /> +61 451 851 810
-          </Link>
+          </p>
           <Link
             href={"mainlto:Info@optidan.com"}
             className="flex items-center mb-3"

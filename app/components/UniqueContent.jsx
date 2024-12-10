@@ -7,7 +7,7 @@ const UniqueContent = () => {
     <div className="py-10 md:py-20">
       <div className="container mx-auto flex flex-col md:flex-row px-5 md:px-0">
         <motion.div
-          initial={{ opacity: 0, translateX: -40 }}
+          initial={{ opacity: 0, translateX: -10 }}
           whileInView={{ opacity: 1, translateX: 0 }}
           transition={{
             duration: 1,
@@ -29,7 +29,7 @@ const UniqueContent = () => {
           </div>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, translateX: 40 }}
+          initial={{ opacity: 0, translateX: 10 }}
           whileInView={{
             opacity: 1,
             translateX: 0,

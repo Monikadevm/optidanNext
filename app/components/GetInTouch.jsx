@@ -8,7 +8,7 @@ const GetInTouch = () => {
     <section className="main-bg2 text-white py-16 px-4">
       <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-between md:space-x-12">
         <motion.div
-          initial={{ opacity: 0, translateX: -40 }}
+          initial={{ opacity: 0, translateX: -10 }}
           whileInView={{ opacity: 1, translateX: 0 }}
           transition={{
             duration: 1.5,
@@ -21,7 +21,7 @@ const GetInTouch = () => {
             </h2>
           </div>
           <form className="p-5 ">
-            <div className="space-y-4">
+            <div className="space-y-4 text-gray-600">
               <div>
                 <label
                   className="block text-sm font-medium text-gray-700 mb-2"
@@ -98,7 +98,7 @@ const GetInTouch = () => {
           </form>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, translateX: 40 }}
+          initial={{ opacity: 0, translateX: 10 }}
           whileInView={{ opacity: 1, translateX: 0 }}
           transition={{
             duration: 1.5,

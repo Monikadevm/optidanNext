@@ -6,7 +6,7 @@ const WhyChooseUs = () => {
   return (
     <section className="container mx-auto flex flex-col md:flex-row items-center gap-8 p-5 md:py-20">
       <motion.div
-        initial={{ opacity: 0, translateX: -20 }}
+        initial={{ opacity: 0, translateX: -10 }}
         whileInView={{ opacity: 1, translateX: 0 }}
         transition={{
           duration: 1,
@@ -23,7 +23,7 @@ const WhyChooseUs = () => {
       <motion.div
         initial={{
           opacity: 0,
-          translateX: 20,
+          translateX: 10,
         }}
         whileInView={{
           opacity: 1,
@@ -35,7 +35,7 @@ const WhyChooseUs = () => {
         className="w-full md:w-1/2 md:text-left text-black"
       >
         <span className="text-lg text-primary flex mb-3">Why Choose Us ?</span>
-        <h2 className="text-3xl font-semibold md:text-[40px] mb-4 m:width-[90%] md:leading-[50px]">
+        <h2 className="text-3xl font-semibold md:text-[40px] mb-4 md:width-[90%] md:leading-[50px]">
           AI-Powered SEO Solution Champions for eCommerce Growth
         </h2>
         <p className="text-black mb-6 text-lg">

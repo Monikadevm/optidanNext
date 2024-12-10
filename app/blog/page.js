@@ -18,10 +18,10 @@ const page = () => {
       <ItemList /> 
       <BlogBanner />*/}
 
-      <div className="container mx-auto py-20">
+      <div className="container mx-auto py-10 md:py-20">
         <div className="flex justify-between flex-col md:flex-row px-5 md:px-0">
           <motion.div
-            initial={{ opacity: 0, translateX: -40 }}
+            initial={{ opacity: 0, translateX: -15 }}
             whileInView={{ opacity: 1, translateX: 0 }}
             transition={{ duration: 1 }}
             className="md:w-[65%] mb-8 md:mb-0"
@@ -52,7 +52,7 @@ const page = () => {
             </div>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, translateX: 40 }}
+            initial={{ opacity: 0, translateX: 15 }}
             whileInView={{ opacity: 1, translateX: 0 }}
             transition={{ duration: 1 }}
             className="md:w-[35%] flex flex-col "

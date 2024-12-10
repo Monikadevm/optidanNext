@@ -6,7 +6,7 @@ const AboutBanner = () => {
     <section className="bg-gradient-to-r from-purple-800 via-indigo-900 to-indigo-950 text-white py-16 px-4">
       <div className="container  mx-auto flex flex-col md:flex-row items-center justify-between md:space-x-12">
         <motion.div
-          initial={{ opacity: 0, translateX: -30 }}
+          initial={{ opacity: 0, translateX: -15 }}
           whileInView={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 1 }}
           className="w-full md:w-2/3 md:pr-10"
@@ -26,7 +26,7 @@ const AboutBanner = () => {
           </div>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, translateX: 40 }}
+          initial={{ opacity: 0, translateX: 15 }}
           whileInView={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 2 }}
           className="w-full md:w-1/3 "

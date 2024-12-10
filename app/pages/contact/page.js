@@ -11,7 +11,7 @@ const page = () => {
       <section className="text-white py-16 px-4 bg-gradient-to-r from-purple-800 via-indigo-900 to-indigo-950">
         <div className="container  mx-auto flex flex-col md:flex-row items-center justify-between md:space-x-12">
           <motion.div
-            initial={{ opacity: 0, translateX: -40 }}
+            initial={{ opacity: 0, translateX: -15 }}
             whileInView={{ opacity: 1, translateX: 0 }}
             transition={{ duration: 1 }}
             className="w-full md:w-[50%] md:pr-10"
@@ -30,7 +30,7 @@ const page = () => {
             </div>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, translateX: 40 }}
+            initial={{ opacity: 0, translateX: 15 }}
             whileInView={{ opacity: 1, translateX: 0 }}
             transition={{ duration: 1 }}
             className="w-full md:w-[50%] "
@@ -90,7 +90,7 @@ const page = () => {
             </div>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, translateX: 40 }}
+            initial={{ opacity: 0, translateX: 15 }}
             whileInView={{ opacity: 1, translateX: 0 }}
             transition={{ duration: 1 }}
             className="w-full md:pl-10 mt-10 md:mt-0"
@@ -158,7 +158,7 @@ const page = () => {
       <section className="main-bg2 md:py-20">
         <div className="container mx-auto flex flex-col md:flex-row items-center px-5 md:px-0">
           <motion.div
-            initial={{ opacity: 0, translateX: -40 }}
+            initial={{ opacity: 0, translateX: -15 }}
             whileInView={{ opacity: 1, translateX: 0 }}
             transition={{ duration: 1 }}
             className="md:w-[50%]"
@@ -220,7 +220,7 @@ const page = () => {
             </div>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, translateX: 40 }}
+            initial={{ opacity: 0, translateX: 15 }}
             whileInView={{ opacity: 1, translateX: 0 }}
             transition={{ duration: 1 }}
             className="md:[w-50%] md:pl-10 mb-10 md:mb-0"

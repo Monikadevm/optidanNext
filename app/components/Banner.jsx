@@ -9,7 +9,7 @@ const Banner = () => {
         <motion.div
           initial={{
             opacity: 0,
-            translateX: -15,
+            translateX: -10,
           }}
           whileInView={{
             opacity: 1,
@@ -36,7 +36,7 @@ const Banner = () => {
         <motion.div
           initial={{
             opacity: 0,
-            translateX: 15,
+            translateX: 10,
           }}
           whileInView={{
             opacity: 1,

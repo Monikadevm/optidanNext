@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { TbPhoneCall } from "react-icons/tb";
@@ -23,15 +22,15 @@ const Navbar = () => {
     },
     {
       label: "About Us",
-      path: "/about",
+      path: "/pages/about",
     },
     {
       label: "Solutions",
-      path: "/solutions",
+      path: "/pages/solutions",
     },
     {
       label: "Blog",
-      path: "/blog",
+      path: "/pages/blog",
     },
   ];
 

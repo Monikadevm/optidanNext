@@ -88,7 +88,6 @@ body {
 .seo-ai .slick-dots {
   @apply md:-left-[624px] !bottom-8 w-[150px] !hidden md:!flex;
 }
-
 .seo-ai-card {
   width: 330px !important;
 }

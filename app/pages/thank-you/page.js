@@ -8,7 +8,7 @@ const page = () => {
         <motion.div
           initial={{
             opacity: 0,
-            translateX: -40,
+            translateX: -15,
           }}
           whileInView={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 1.5 }}
@@ -26,7 +26,7 @@ const page = () => {
           </button>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, translateX: 40 }}
+          initial={{ opacity: 0, translateX: 15 }}
           whileInView={{ opacity: 1, translateX: 0 }}
           transition={{
             duration: 1,

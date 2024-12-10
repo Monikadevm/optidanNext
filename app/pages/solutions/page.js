@@ -103,7 +103,7 @@ const page = () => {
         <div className="container  mx-auto flex flex-col md:flex-row items-center justify-between md:space-x-12">
           <div className="w-full md:w-[50%] md:pr-10">
             <motion.div
-              initial={{ opacity: 0, translateX: -40 }}
+              initial={{ opacity: 0, translateX: -15 }}
               whileInView={{ opacity: 1, translateX: 0 }}
               transition={{ duration: 2 }}
               className="md:w-[500px]"
@@ -123,7 +123,7 @@ const page = () => {
             </motion.div>
           </div>
           <motion.div
-            initial={{ opacity: 0, translateX: 40 }}
+            initial={{ opacity: 0, translateX: 15 }}
             whileInView={{ opacity: 1, translateX: 0 }}
             transition={{ duration: 2 }}
             className="w-full md:w-[50%] "
@@ -134,7 +134,7 @@ const page = () => {
       </section>
       <section className="container mx-auto flex flex-col md:flex-row items-center gap-8 p-5 md:py-20">
         <motion.div
-          initial={{ opacity: 0, translateX: -40 }}
+          initial={{ opacity: 0, translateX: -15 }}
           whileInView={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 2 }}
           className="w-full md:w-1/2"
@@ -147,7 +147,7 @@ const page = () => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, translateX: 40 }}
+          initial={{ opacity: 0, translateX: 15 }}
           whileInView={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 2 }}
           className="w-full md:w-1/2 md:text-left text-black"
@@ -286,7 +286,7 @@ const page = () => {
       </motion.div>
       <div className="container mx-auto py-10 md:py-20 grid md:grid-cols-2 px-5 md:px-0">
         <motion.div
-          initial={{ opacity: 0, translateX: -40 }}
+          initial={{ opacity: 0, translateX: -15 }}
           whileInView={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 1 }}
         >
@@ -306,7 +306,7 @@ const page = () => {
           </ul>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, translateX: 40 }}
+          initial={{ opacity: 0, translateX: 15 }}
           whileInView={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 1 }}
           className=" px-5 md:px-0 mt-5 md:mt-0"

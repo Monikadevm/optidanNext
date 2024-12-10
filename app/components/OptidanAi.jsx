@@ -8,7 +8,7 @@ const OptidanAi = () => {
     <div className="optidan-services py-10 md:py-20">
       <div className="container mx-auto grid md:grid-cols-2">
         <motion.div
-          initial={{ opacity: 0, translateX: -40 }}
+          initial={{ opacity: 0, translateX: -10 }}
           whileInView={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 1 }}
           className="px-5"
@@ -16,7 +16,7 @@ const OptidanAi = () => {
           <img src="/optidan-ai.png" alt="" />
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, translateX: 40 }}
+          initial={{ opacity: 0, translateX: 10 }}
           whileInView={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 1 }}
           className="md:w-[100%] px-5 md:px-0 md:pl-8"

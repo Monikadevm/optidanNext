@@ -8,7 +8,7 @@ const ThreeSections = () => {
       <div className="flex flex-col">
         <div className="flex flex-col md:flex-row justify-between items-center mt-10">
           <motion.div
-            initial={{ opacity: 0, translateX: -40 }}
+            initial={{ opacity: 0, translateX: -15 }}
             whileInView={{ opacity: 1, translateX: 0 }}
             transition={{ duration: 2 }}
             className="md:w-[50%] md:pr-20"
@@ -27,7 +27,7 @@ const ThreeSections = () => {
             </p>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, translateX: 40 }}
+            initial={{ opacity: 0, translateX: 15 }}
             whileInView={{ opacity: 1, translateX: 0 }}
             transition={{ duration: 2 }}
             className="mt-10 md:mt-0"
@@ -40,7 +40,7 @@ const ThreeSections = () => {
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center mt-10">
           <motion.div
-            initial={{ opacity: 0, translateX: -40 }}
+            initial={{ opacity: 0, translateX: -15 }}
             whileInView={{ opacity: 1, translateX: 0 }}
             transition={{ duration: 2 }}
             className="mt-10 md:mt-0"
@@ -51,7 +51,7 @@ const ThreeSections = () => {
             />
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, translateX: 40 }}
+            initial={{ opacity: 0, translateX: 15 }}
             whileInView={{ opacity: 1, translateX: 0 }}
             transition={{ duration: 2 }}
             className="md:w-[50%] md:pr-20"
@@ -74,7 +74,7 @@ const ThreeSections = () => {
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center mt-10">
           <motion.div
-            initial={{ opacity: 0, translateX: -40 }}
+            initial={{ opacity: 0, translateX: -15 }}
             whileInView={{ opacity: 1, translateX: 0 }}
             transition={{ duration: 2 }}
             className="md:w-[50%] md:pr-20"
@@ -94,7 +94,7 @@ const ThreeSections = () => {
             </p>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, translateX: 40 }}
+            initial={{ opacity: 0, translateX: 15 }}
             whileInView={{ opacity: 1, translateX: 0 }}
             transition={{ duration: 2 }}
             className="mt-10 md:mt-0"
