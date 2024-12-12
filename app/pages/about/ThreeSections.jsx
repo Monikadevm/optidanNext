@@ -61,8 +61,8 @@ const ThreeSections = () => {
             </h3>
             <p>
               Having managed head office accounts and led significant projects
-              in his previous roles, JP understands the importance of aligning
-              with retailers' goals and challenges. Optidan AI is more than just
+              in his previous roles, JP understages. Optidnds the importance of
+              aligning with retailers' goals and challenan AI is more than just
               a service provider - it's a partner that shares in the ambitions
               and successes of its clients through a hybrid consulting SaaS
               Model. JP's approach is all about creating bespoke solutions that
@@ -77,7 +77,7 @@ const ThreeSections = () => {
             initial={{ opacity: 0, translateX: -15 }}
             whileInView={{ opacity: 1, translateX: 0 }}
             transition={{ duration: 2 }}
-            className="md:w-[50%] md:pr-20"
+            className="md:w-[50]% md:pr-20"
           >
             <h3 className="text-3xl md:text-4xl mb-3 font-semibold">
               Proven Results, Proven Expertise
