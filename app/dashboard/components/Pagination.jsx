@@ -1,6 +1,4 @@
 import Link from "next/link";
-import React from "react";
-import { FaCaretRight, FaCaretLeft } from "react-icons/fa";
 
 const Pagination = () => {
   return (
@@ -9,7 +7,7 @@ const Pagination = () => {
         <li className="m-[2px]">
           <Link
             href={""}
-            className="p-2 bg-gray-400 hover:bg-indigo-600 border rounded-lg duration-200 w-8 h-8 flex items-center justify-center"
+            className="p-2  bg-gray-400 hover:bg-indigo-600 focus:bg-indigo-600 border rounded-lg duration-200 w-8 h-8 flex items-center justify-center"
           >
             &laquo;
           </Link>
@@ -17,7 +15,7 @@ const Pagination = () => {
         <li className="m-[2px]">
           <Link
             href={""}
-            className="p-2 bg-gray-400 hover:bg-indigo-600 border rounded-lg duration-200 w-8 h-8 flex items-center justify-center"
+            className="p-2 bg-gray-400 hover:bg-indigo-600 focus:bg-indigo-600 border rounded-lg duration-200 w-8 h-8 flex items-center justify-center"
           >
             1
           </Link>
@@ -25,7 +23,7 @@ const Pagination = () => {
         <li className="m-[2px]">
           <Link
             href={""}
-            className="p-2 bg-gray-400 hover:bg-indigo-600 border rounded-lg duration-200 w-8 h-8 flex items-center justify-center"
+            className="p-2 bg-gray-400 hover:bg-indigo-600 focus:bg-indigo-600 border rounded-lg duration-200 w-8 h-8 flex items-center justify-center"
           >
             2
           </Link>
@@ -33,7 +31,7 @@ const Pagination = () => {
         <li className="m-[2px]">
           <Link
             href={""}
-            className="p-2 bg-gray-400 hover:bg-indigo-600 border rounded-lg duration-200 w-8 h-8 flex items-center justify-center"
+            className="p-2 bg-gray-400 hover:bg-indigo-600 focus:bg-indigo-600 border rounded-lg duration-200 w-8 h-8 flex items-center justify-center"
           >
             3
           </Link>
@@ -41,7 +39,7 @@ const Pagination = () => {
         <li className="m-[2px]">
           <Link
             href={""}
-            className="p-2 bg-gray-400 hover:bg-indigo-600 border rounded-lg duration-200 w-8 h-8 flex items-center justify-center"
+            className="p-2 bg-gray-400 hover:bg-indigo-600 focus:bg-indigo-600 border rounded-lg duration-200 w-8 h-8 flex items-center justify-center"
           >
             &raquo;
           </Link>

@@ -35,7 +35,7 @@ const addUser = () => {
             type="email"
             id="email"
             placeholder="Enter Email"
-            className="p-3 border rounded-lg shadow-sm outline-none"
+            className="p-3 border rounded-lg shadow-sm outline-none "
           />
         </div>
         <div className="flex flex-col mb-4">

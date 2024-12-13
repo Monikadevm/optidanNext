@@ -132,8 +132,10 @@ const users = () => {
           />
         </div>
         <div>
-          <Link href={"/users/add-user"}>Add user</Link>
-          <button className="py-2 px-4 bg-indigo-600 rounded-full text-whiteZ font-semibold">
+          <button className="bg-gray-300 hover:bg-gray-400 duration-200 py-2 px-5 rounded-full mr-3 text-gray-600 font-semibold">
+            <Link href={"/dashboard/users/add"}>Add user</Link>
+          </button>
+          <button className="py-2 px-4 bg-indigo-600 hover:bg-indigo-800  rounded-full text-white font-semibold">
             Download Report
           </button>
         </div>
